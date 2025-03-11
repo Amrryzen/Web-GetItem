@@ -1,0 +1,126 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffa500;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 150px; /* Sesuaikan ukuran logo jika perlu */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.action-btns button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Navigasi */
+nav {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffa500;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+
+/* Carousel */
+.carousel {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* 3 slide */
+}
+
+/* Product Card Style */
+.product {
+  flex: 1 0 33.333%;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #666;
+}
