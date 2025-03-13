@@ -8,6 +8,7 @@
 body {
   background: url('image\ \(1\).jpg') no-repeat center center fixed;
   background-size: cover; /* Pastikan gambar menutupi seluruh layar */
+  height: 1000px;
   font-family: Arial, sans-serif;
   color: #ffffff;
 }
@@ -55,11 +56,15 @@ header {
 
 /* Navigasi */
 nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
   background: #ffffff;
   padding: 0.5rem 1rem;
   display: flex;
   gap: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Pastikan navbar tetap di atas elemen lain */
 }
 
 nav a {
@@ -73,6 +78,22 @@ nav a:hover {
   color: #ffa500;
 }
 
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000; /* Pastikan tetap di atas elemen lain */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #ffa500;
+}
 
 
 /* Section Title */
@@ -84,7 +105,7 @@ nav a:hover {
 
 /* Carousel */
 .carousel {
-  width: 100%;
+  width: 95%;
   height: 400px;
   margin: auto;
   position: relative;
@@ -110,7 +131,7 @@ nav a:hover {
   margin: 0.5rem; /* Kurangi margin */
   border-radius: 8px;
   border: 2px solid #ddd;
-  transition: 0.5s;
+  transition: 0.4s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -129,7 +150,7 @@ nav a:hover {
 }
 
 .product:hover {
-  transform:scale(1.12);
+  transform:scale(1.05);
   z-index: 2;
 }
 
