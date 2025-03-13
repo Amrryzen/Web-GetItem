@@ -7,30 +7,31 @@
 </head>
 <body>
 
-    <div class="sticky-header">
-        <!-- Header -->
-        <header>
-          <div class="logo">
-            <a href="index.html">
-              <img src="Logo 1.png" alt="GET ITEM Logo">
-            </a>
-          </div>
-        </header>
+  <div class="sticky-header">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="Logo 1.png" alt="GET ITEM Logo">
+        </a>
+      </div>
+    </header>
+  </div>
 
   <!-- Kotak Login -->
   <div class="login-box">
     <h2>Masuk ke akun Anda</h2>
     <p>Jika Anda tidak memiliki akun, silakan <a href="signup.html">buat akun</a></p>
 
-    <form action="#" method="POST">
+    <form id="loginForm">
       <!-- Email / Username -->
       <div class="form-group">
-        <input type="text" placeholder="Email / Nama Pengguna" required>
+        <input type="text" id="email" placeholder="Email / Nama Pengguna" required>
       </div>
 
       <!-- Password -->
       <div class="form-group">
-        <input type="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
       </div>
 
       <!-- Ingatkan Saya & Lupa Password -->
@@ -46,9 +47,25 @@
       </div>
 
       <!-- Tombol Masuk -->
-      <button type="submit" class="login-btn">Masuk</button>
+      <button type="submit" class="login-btn" a href="index2.html">Masuk</button>
     </form>
   </div>
+
+  <script>
+    // Tangani form login
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Mencegah form submit default
+
+      // Ambil nilai email/username
+      const email = document.getElementById('email').value;
+
+      // Simpan email/username ke localStorage
+      localStorage.setItem('loggedInUser', email);
+
+      // Redirect ke index.html setelah login
+      window.location.href = 'index2.html';
+    });
+  </script>
 
 </body>
 </html>

@@ -23,7 +23,7 @@ header {
   padding: 1rem;
 }
 
-/* Tombol Masuk */
+/* Tombol Masuk (digunakan di index.html) */
 .login-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -63,6 +63,11 @@ header {
 }
 
 /* Action Buttons */
+.action-btns {
+  display: flex;
+  align-items: center;
+}
+
 .action-btns button {
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
@@ -73,14 +78,29 @@ header {
   color: #ffffff;
 }
 
+/* Tampilan khusus untuk halaman sudah login */
+.logged-in .action-btns .user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logged-in .action-btns .user-icon {
+  font-size: 1.5rem;
+}
+
+.logged-in .action-btns .user-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
 /* Navigasi */
 nav {
   position: sticky;
   top: 0;
   width: 100%;
   background: #ffa500;
-  padding-top: 2px;
-  padding-bottom: 5px;
+  padding: 2px 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,10 +152,14 @@ nav a:hover {
   align-items: center;
 }
 
+/* Carousel Container dengan scroll horizontal smooth & snap */
 .carousel-container {
   display: flex;
-  justify-content: center;
   transition: transform 0.5s ease-in-out;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Produk dalam Carousel */
@@ -155,6 +179,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+  scroll-snap-align: start;
 }
 
 .product img {

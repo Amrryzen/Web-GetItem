@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Buat Akun - GET ITEM</title>
-  <link rel="stylesheet" href="styless.css">
+    <meta charset="UTF-8">
+    <title>Buat Akun - GET ITEM</title>
+    <link rel="stylesheet" href="styless.css">
 </head>
+
 <body>
 
-  <div class="sticky-header">
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="Logo 1.png" alt="GET ITEM Logo">
-        </a>
-      </div>
-    </header>
-  </div>
-
-  <!-- Kotak Buat Akun -->
-  <div class="signup-box">
-    <h2>Buat akun Anda</h2>
-    <p>Jika Anda sudah memiliki akun, silakan <a href="login.html">masuk</a></p>
-
-    <form action="#" method="POST">
-      <!-- Email -->
-      <div class="form-group">
-        <input type="email" placeholder="Email" required>
-      </div>
-
-      <!-- Password -->
-      <div class="form-group">
-        <input type="password" placeholder="Password" required>
-      </div>
-
-      <!-- Konfirmasi Password -->
-      <div class="form-group">
-        <input type="password" placeholder="Konfirmasi Password" required>
-      </div>
-
-      <!-- Checkbox Persetujuan -->
-      <div class="agreement">
-        <label>
-          <input type="checkbox" required>
-          Saya telah membaca dan menyetujui <a href="#">syarat dan ketentuan</a> GET ITEM (wajib disetujui).
-        </label>
-        <label>
-          <input type="checkbox" required>
-          Saya mengetahui <a href="#">kebijakan privasi</a> GET ITEM [Republik Indonesia] mengenai Pengumpulan dan Penggunaan Informasi Pribadi (wajib disetujui).
-        </label>
-        <label>
-          <input type="checkbox">
-          Saya setuju untuk mendapatkan informasi pemasaran dari GET ITEM, termasuk melalui email dan media sosial (opsional).
-        </label>
-      </div>
-
-      <!-- Tombol Buat Akun -->
-      <button type="submit" class="signup-btn" href="signupsuccess.html">Buat Akun</button>
-    </form>
-
-    <!-- Sudah Punya Akun? -->
-    <div class="already-have-account">
-      <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
+    <div class="sticky-header">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo 1.png" alt="GET ITEM Logo">
+                </a>
+            </div>
+        </header>
     </div>
-  </div>
+
+    <!-- Kotak Buat Akun -->
+    <div class="signup-box">
+        <h2>Buat akun Anda</h2>
+        <p>Jika Anda sudah memiliki akun, silakan <a href="login.html">masuk</a></p>
+
+        <form action="signupsuccess.html" method="GET">
+          
+            <!-- Email -->
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <!-- Konfirmasi Password -->
+            <div class="form-group">
+                <input type="password" placeholder="Konfirmasi Password" required>
+            </div>
+
+            <!-- Checkbox Persetujuan -->
+            <div class="agreement">
+                <label>
+                    <input type="checkbox" required>
+                    Saya telah membaca dan menyetujui <a href="#">syarat dan ketentuan</a> GET ITEM (wajib disetujui).
+                </label>
+                <label>
+                    <input type="checkbox" required>
+                    Saya mengetahui <a href="#">kebijakan privasi</a> GET ITEM [Republik Indonesia] mengenai Pengumpulan
+                    dan Penggunaan Informasi Pribadi (wajib disetujui).
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Saya setuju untuk mendapatkan informasi pemasaran dari GET ITEM, termasuk melalui email dan media
+                    sosial (opsional).
+                </label>
+            </div>
+
+            <!-- Tombol Buat Akun -->
+            <button type="submit" class="signup-btn">Buat Akun</button>
+
+        </form>
+
+        <!-- Sudah Punya Akun? -->
+        <div class="already-have-account">
+            <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
+        </div>
+    </div>
 
 </body>
+
 </html>
