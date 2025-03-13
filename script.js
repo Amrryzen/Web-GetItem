@@ -1,17 +1,15 @@
+// Inisialisasi index slide saat ini
 let currentIndex = 0;
-const totalSlides = document.querySelectorAll(".product").length;
-const carouselContainer = document.querySelector(".carousel-container");
+const totalSlides = document.querySelectorAll('.product').length; // Hitung jumlah slide
+const carouselContainer = document.querySelector('.carousel-container');
 
-document.querySelector(".next").addEventListener("click", () => {
+// Fungsi untuk mengupdate posisi carousel
+function updateCarousel() {
+  carouselContainer.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
+}
+
+// Pindah slide otomatis setiap 3 detik
+setInterval(() => {
   currentIndex = (currentIndex + 1) % totalSlides;
   updateCarousel();
-});
-
-document.querySelector(".prev").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateCarousel();
-});
-
-function updateCarousel() {
-  carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+}, 3000);
