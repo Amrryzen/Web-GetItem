@@ -6,11 +6,11 @@
 }
 
 body {
-  background: #f8f8f8;
+  background: url('image\ \(1\).jpg') no-repeat center center fixed;
+  background-size: cover; /* Pastikan gambar menutupi seluruh layar */
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #ffffff;
 }
-
 /* Header */
 header {
   display: flex;
@@ -85,14 +85,18 @@ nav a:hover {
 /* Carousel */
 .carousel {
   width: 100%;
- height: 400px;
+  height: 400px;
   margin: auto;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center; /* Memastikan konten berada di tengah */
+  align-items: center; /* Pusatkan secara vertikal */
 }
 
 .carousel-container {
   display: flex;
+  justify-content: center; /* Pusatkan produk di dalam carousel */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -101,7 +105,8 @@ nav a:hover {
   height: 320px; /* Batasi tinggi menjadi 320px */
   padding: 0.5rem; /* Kurangi padding */
   text-align: center;
-  background: #fff;
+  background: #ffffff36;
+  backdrop-filter: blur(5px);
   margin: 0.5rem; /* Kurangi margin */
   border-radius: 8px;
   border: 2px solid #ddd;
@@ -137,7 +142,7 @@ nav a:hover {
 .product p {
   font-size: 0.95rem;
   line-height: 1.4;
-  color: #666;
+  color: #ffffff;
 }
 
 
