@@ -1,0 +1,109 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #ffffff;
+  }
+  
+  /* STICKY HEADER */
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffa500; /* Warna oranye header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    text-align: center;
+    padding: 1rem 0;
+    height: 15%;
+  }
+  
+  /* Logo di header */
+  .logo img {
+    width: 250px; /* Sesuaikan lebar logo */
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  /* SUCCESS BOX */
+  .success-box {
+    width: 600px;
+    max-width: 90%;
+    margin: 140px auto 50px auto; /* Margin top 140px agar tidak tertutup header sticky */
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ikon Centang */
+  .success-icon {
+    font-size: 60px;
+    color: #28a745; /* Warna hijau untuk ikon centang */
+    margin-bottom: 20px;
+  }
+  
+  /* Judul "Akun Anda Berhasil Dibuat!" */
+  .success-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Pesan Sukses */
+  .success-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Tombol Masuk */
+  .success-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Warna hijau untuk tombol */
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .success-btn:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat dihover */
+  }
+  
+  /* RESPONSIVE: Untuk layar di bawah 480px */
+  @media (max-width: 480px) {
+    .success-box {
+      width: 90%;
+      margin-top: 100px;
+    }
+  
+    .success-icon {
+      font-size: 50px;
+    }
+  
+    .success-box h2 {
+      font-size: 20px;
+    }
+  
+    .success-box p {
+      font-size: 14px;
+    }
+  
+    .success-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }

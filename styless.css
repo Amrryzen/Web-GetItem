@@ -1,0 +1,156 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #ffffff;
+}
+
+/* STICKY HEADER */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffa500; /* Warna oranye header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  text-align: center;
+  padding: 1rem 0;
+  height: 15%;
+}
+
+/* Logo di header */
+.logo img {
+  width: 250px; /* Sesuaikan lebar logo */
+  height: auto;
+  margin-top: 15px;
+}
+
+/* SIGNUP BOX */
+.signup-box {
+  width: 600px;
+  max-width: 90%;
+  margin: 140px auto 50px auto; /* Margin top 140px agar tidak tertutup header sticky */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Judul "Buat akun Anda" */
+.signup-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Paragraf kecil di bawah judul */
+.signup-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Link "masuk" */
+.signup-box p a {
+  color: #007bff;
+  text-decoration: none;
+}
+.signup-box p a:hover {
+  text-decoration: underline;
+}
+
+/* FORM GROUP: Wrapper setiap input */
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* INPUT (Email, Password, Konfirmasi Password) */
+.form-group input {
+  width: 60%; /* Lebar input ~60% dari box */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  outline: none;
+}
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+/* AGREEMENT SECTION */
+.agreement {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+.agreement label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.agreement label input {
+  margin-right: 10px;
+}
+
+.agreement label a {
+  color: #007bff;
+  text-decoration: none;
+}
+.agreement label a:hover {
+  text-decoration: underline;
+}
+
+/* TOMBOL BUAT AKUN */
+.signup-btn {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffa500; /* Oranye sama dengan header */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signup-btn:hover {
+  background-color: #e69500;
+}
+
+/* Sudah Punya Akun? */
+.already-have-account {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+.already-have-account a {
+  color: #007bff;
+  text-decoration: none;
+}
+.already-have-account a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE: Untuk layar di bawah 480px */
+@media (max-width: 480px) {
+  .signup-box {
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  .form-group input,
+  .agreement,
+  .signup-btn {
+    width: 100%;
+  }
+}
