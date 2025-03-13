@@ -73,6 +73,8 @@ nav a:hover {
   color: #ffa500;
 }
 
+
+
 /* Section Title */
 .section-title {
   text-align: center;
@@ -82,8 +84,7 @@ nav a:hover {
 
 /* Carousel */
 .carousel {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
